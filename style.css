@@ -1,0 +1,53 @@
+/*
+Theme Name: Twenty Twelve Footers
+Theme URI: http://yoursite/yourtheme
+Description: A child theme of 2012 default WordPress theme with Footer Widgets.
+Author: Your Name
+Author url: http://yoursite.com/
+Version: 1.0
+Tags: black, blue, white, fixed-width, custom-header, theme-options
+Template: twentytwelve
+*/
+@import url('../twentytwelve/style.css');
+
+/* ===[ Footer Widget Areas ]=== */
+
+.site-info { clear: both; }
+
+#footer-widgets {
+    width: 100%;
+    border-top: none;
+}
+#footer-widgets .widget li { 
+    list-style-type: none; 
+}
+
+@media screen and (min-width: 960px) {
+.widget-left {
+    float: left;
+    margin-right: 3.5%;
+    width: 31%;
+    clear: none;
+}
+.widget-center {
+    float: left;
+    width: 31%;
+    clear: none;
+}
+.widget-right {
+    float: right;
+    width: 31%;
+    margin-left: 3.5%;
+    clear: none;
+	}
+}
+
+
+/* for IE8 and IE7 */
+.ie #footer-widgets.three .widget {
+    float: left;
+    margin-right: 3.1%;
+    width: 29.85%;
+    clear: none;
+}
+.ie #footer-widgets.three .widget + .widget + .widget { margin-right: 3.1%; }
